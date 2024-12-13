@@ -1,0 +1,77 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Style Guide/Typography" />
+
+export const typography = {
+  type: {
+    primary: 'inter, sans-serif',
+  },
+  weight: {
+    regular: '400',
+    medium: '500',
+    semibold: '600',
+    bold: '700',
+  },
+  headingSizes: {
+    "2xl": 72,
+    xl: 60,
+    lg: 48,
+    md: 36,
+    sm: 30,
+    xs: 24,
+  },
+  textSizes: {
+    xl: 20,
+    lg: 18,
+    md: 16,
+    sm: 14,
+    xs: 12,
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Typography
+
+## Headings
+
+**Font:** Inter
+
+**Weights:** 400(regular), 500(medium), 600(semibold), 700(bold)
+
+**Sizes:** 2xl(72px), xl(60px), lg(48px), md(36px), sm(30px), xs(24px)
+
+<Typeset
+  fontSizes={[
+    typography.headingSizes['2xl'],
+    typography.headingSizes.xl,
+    typography.headingSizes.lg,
+    typography.headingSizes.md,
+    typography.headingSizes.sm,
+    typography.headingSizes.xs,
+  ]}
+  fontWeight={typography.weight.black}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+## Body
+
+**Font:** Inter
+
+**Weights:** 400(regular), 500(medium), 600(semibold), 700(bold)
+
+**Sizes:** xl(20px), lg(18px), md(16px), sm(14px), xs(12px)
+
+<Typeset
+  fontSizes={[
+    typography.textSizes.xl,
+    typography.textSizes.lg,
+    typography.textSizes.md,
+    typography.textSizes.sm,
+    typography.textSizes.xs,
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>

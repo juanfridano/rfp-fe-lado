@@ -1,0 +1,107 @@
+/* React Select */
+.chakra-form-control  .react-select__control {
+  min-height: 48px;
+}
+
+.chakra-form-control .react-select__input-container {
+  padding: 0;
+  margin: 0;
+}
+
+.chakra-form-control .react-select__value-container {
+  padding: 12px;
+}
+
+.react-select__control .react-select__placeholder  {
+  margin: 0;
+  color: var(--chakra-colors-gray-neutral-500);
+  line-height: 24px;
+}
+
+.react-select__indicator-separator  {
+  display: none;
+}
+
+div[data-invalid] .react-select__control {
+  border-color: var(--chakra-colors-error-800);
+  background-color:  var(--chakra-colors-gray-neutral-100);
+}
+
+div[data-invalid] .react-select__placeholder  {
+  color: var(--chakra-colors-gray-neutral-500);
+}
+
+div.chakra-form-control .react-select__control--is-focused {
+  border-color: var(--chakra-colors-brand-700);
+  box-shadow: 0 0 0 1px var(--chakra-colors-brand-700);
+  background-color: white;
+}
+
+div.chakra-form-control .react-select__control--is-disabled {
+  border-color: var(--chakra-colors-gray-neutral-300);
+  background-color:var(--chakra-colors-gray-neutral-100);
+  color: var(--chakra-colors-gray-neutral-500);
+  cursor: "not-allowed",
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--chakra-colors-gray-neutral-300);
+  border-radius: 16px;
+  width: 139px;
+}
+
+/* width */
+.member-list-scroll::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 13px;
+  background: #C9C9C9;
+}
+
+/* Track */
+.member-list-scroll::-webkit-scrollbar-track {
+  border-radius: 13px;
+  background: #F3F3F3;
+}
+
+/* Menucheckbox*/
+button[role="menuitemcheckbox"] {
+  margin-bottom: 20px;
+  padding: 0;
+  background: transparent;
+}
+
+button[role="menuitemcheckbox"]:last-child {
+  margin-bottom: 0;
+}
+
+button[role="menuitemcheckbox"] .chakra-menu__icon-wrapper {
+  border: 2px solid;
+  border-color: var(--chakra-colors-gray-neutral-500);
+  padding: 1px;
+  border-radius: 1px;
+  margin-right: 10px;
+}
+
+button[role="menuitemcheckbox"][aria-checked="true"] .chakra-menu__icon-wrapper {
+  border-color: var(--chakra-colors-brand-800);
+  background-color: var(--chakra-colors-brand-700);
+  color: white;
+  opacity: 1;
+}
+
+button[role="menuitemcheckbox"][aria-checked="false"] .chakra-menu__icon-wrapper {
+  opacity: 1;
+}
+
+button[role="menuitemcheckbox"][aria-checked="false"] .chakra-menu__icon-wrapper svg {
+  opacity: 0;
+}
+
+button[role="menuitemcheckbox"]:hover .chakra-menu__icon-wrapper {
+  border-color: var(--chakra-colors-gray-neutral-600);
+}

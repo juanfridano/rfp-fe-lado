@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: 211125623050.dkr.ecr.us-west-1.amazonaws.com/rfptoolfrontend:latest
+    ports:
+      - "80:3000"
+    environment:
+      - NODE_ENV=production
+    restart: always
+
+# Add other services or configurations as needed
